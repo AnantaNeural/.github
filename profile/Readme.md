@@ -279,30 +279,14 @@ ELSE                    →  continue integrating input
 
 <br/>
 
-**Visual: Membrane Potential Over Time**
-
-```
-Voltage
-  |
-V_th -------- - - - - - - - - - ●───── spike! ──── ●
-  |          /                 /|                  /|
-  |         /     leaking     / |  reset          / |
-  |        /                 /  ↓                /  ↓
-V_rest ───/──────────────────────────────────────────── time
-         ↑                   ↑                   ↑
-      input                input               input
-      arrives              arrives             arrives
-```
-
-> *This is literally how your neurons work right now — reading these words.*
-
-<br/>
-
 **Diagram — LIF Neuron Membrane Potential:**
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/AnantaNeural/.github/main/profile/assets/lif_neuron.svg" width="700" alt="LIF Neuron - Membrane Potential and Spike Diagram" />
 </div>
+
+
+> *This is literally how your neurons work right now — reading these words.*
 
 <br/>
 
@@ -371,22 +355,6 @@ If pre fires AFTER post   →  synapse WEAKENS       (Δw < 0)  — "A didn't ca
 | `τ₊, τ₋` | Time constants controlling how fast the effect decays |
 
 <br/>
-
-**Visual: STDP Learning Window**
-
-```
-  Δw
-   |
-A₊ |    *
-   |   * *
-   |  *   *                       ← Pre fires before post = STRENGTHEN
-   | *      * * *
-───┼─────────────── Δt (ms)
-   |             * * *
-   |                  *           ← Post fires before pre = WEAKEN
-   |                   *
-A₋ |                    *
-```
 
 **Diagram — STDP Learning Window:**
 
