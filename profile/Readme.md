@@ -10,8 +10,8 @@
 ██╔══██╗████╗  ██║██╔══██╗████╗  ██║╚══██╔══╝██╔══██╗
 ███████║██╔██╗ ██║███████║██╔██╗ ██║   ██║   ███████║
 ██╔══██║██║╚██╗██║██╔══██║██║╚██╗██║   ██║   ██╔══██║
-██║  ██║██║ ╚████║██║  ██║██║ ╚████║   ██║   ██║  ██║
-╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝
+██║  ██║██║ ╚████║██║  ██║██║ ╚████║   ██║    ██║  ██║
+╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝    ╚═╝  ╚═╝
                    N E U R A L
 ```
 
@@ -25,7 +25,12 @@
 [![Research Status](https://img.shields.io/badge/Status-Active_R%26D-00ff88?style=flat-square&labelColor=0a0a0a)](https://github.com/AnantaNeural)
 [![Focus](https://img.shields.io/badge/Focus-Biological_AGI-white?style=flat-square&labelColor=0a0a0a)](https://github.com/AnantaNeural)
 [![Architecture](https://img.shields.io/badge/Core-Free_Energy_Principle-888888?style=flat-square&labelColor=0a0a0a)](https://github.com/AnantaNeural)
-[![Twitter](https://img.shields.io/badge/@AnantaNeural-follow-1da1f2?style=flat-square&logo=twitter&labelColor=0a0a0a)](https://twitter.com/AnantaNeural)
+
+[![Twitter](https://img.shields.io/badge/X-@AnantaNeural-000000?style=flat-square&logo=x&logoColor=white)](https://twitter.com/AnantaNeural)
+[![Instagram](https://img.shields.io/badge/Instagram-@AnantaNeural-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://instagram.com/AnantaNeural)
+[![YouTube](https://img.shields.io/badge/YouTube-@AnantaNeural-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://youtube.com/@AnantaNeural)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-AnantaNeural-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/company/AnantaNeural)
+[![GitHub](https://img.shields.io/badge/GitHub-AnantaNeural-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/AnantaNeural)
 
 </div>
 
@@ -116,33 +121,33 @@ MAYA is built on the **Triune Brain Model** — three deeply interconnected modu
 
 ```
 ╔══════════════════════════════════════════════════════════════════╗
-║                      MAYA  ARCHITECTURE                         ║
+║                      MAYA  ARCHITECTURE                                      ║
 ╠══════════════════════════════════════════════════════════════════╣
-║                                                                  ║
-║   ┌─────────────────────────────────────────────────────────┐   ║
-║   │  THE NEOCORTEX                                          │   ║
-║   │      Complex pattern recognition                        │   ║
-║   │      Abstract reasoning & high-level planning           │   ║
-║   │      World-Model building (3D Reference Frames)         │   ║
-║   │      Cortical Columns → consensus-based truth           │   ║
-║   └─────────────────────────────────────────────────────────┘   ║
-║                            ↕                                     ║
-║   ┌─────────────────────────────────────────────────────────┐   ║
-║   │  THE HIPPOCAMPUS                                        │   ║
-║   │      Episodic memory store                              │   ║
-║   │      Fast one-shot learning                             │   ║
-║   │      Past experience replay                             │   ║
-║   │      Working memory <-> Long-term memory bridge         │   ║
-║   └─────────────────────────────────────────────────────────┘   ║
-║                            ↕                                     ║
-║   ┌─────────────────────────────────────────────────────────┐   ║
-║   │  BASAL GANGLIA + NEUROMODULATORS                        │   ║
-║   │      Action selection engine                            │   ║
-║   │      Dopamine / Serotonin simulation                    │   ║
-║   │      Reinforcement & reward processing                  │   ║
-║   │      Attention focus: "Where should I look next?"       │   ║
-║   └─────────────────────────────────────────────────────────┘   ║
-║                                                                  ║
+║                                                                              ║
+║   ┌─────────────────────────────────────────────────────────┐     ║
+║   │  THE NEOCORTEX                                                     │     ║
+║   │      Complex pattern recognition                                   │     ║
+║   │      Abstract reasoning & high-level planning                      │     ║
+║   │      World-Model building (3D Reference Frames)                    │     ║
+║   │      Cortical Columns → consensus-based truth                     │     ║
+║   └─────────────────────────────────────────────────────────┘     ║
+║                            ↕                                                 ║
+║   ┌─────────────────────────────────────────────────────────┐     ║
+║   │  THE HIPPOCAMPUS                                                   │     ║
+║   │      Episodic memory store                                         │     ║
+║   │      Fast one-shot learning                                        │     ║
+║   │      Past experience replay                                        │     ║
+║   │      Working memory <-> Long-term memory bridge                    │     ║
+║   └─────────────────────────────────────────────────────────┘     ║
+║                            ↕                                                 ║
+║   ┌─────────────────────────────────────────────────────────┐     ║
+║   │  BASAL GANGLIA + NEUROMODULATORS                                   │     ║
+║   │      Action selection engine                                       │     ║
+║   │      Dopamine / Serotonin simulation                               │     ║
+║   │      Reinforcement & reward processing                             │     ║
+║   │      Attention focus: "Where should I look next?"                  │     ║
+║   └─────────────────────────────────────────────────────────┘     ║
+║                                                                              ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
 
@@ -196,37 +201,272 @@ This dual mechanism is the foundation of all **Active Inference** — and the en
 
 ---
 
+## 〉 Spiking Neural Networks (SNNs) — The Core of MAYA's Brain
+
+> *"Conventional neural networks are like a river of water — continuous, smooth, always flowing. The brain is like a lightning storm — discrete, explosive, timed to the millisecond."*
+
+### Why SNNs? The Problem with Traditional Neural Networks
+
+Every neural network you know — GPT, BERT, ResNet — is built on the same primitive: a **continuous activation function**. Input comes in, gets multiplied by weights, passed through a sigmoid or ReLU, and out comes a number. Simple. Clean. And completely unlike how your brain works.
+
+In your brain, neurons don't output a continuous number. They either **fire** or they **don't**. And *when* they fire matters as much as *whether* they fire.
+
+```
+Traditional ANN Neuron:          Spiking Neuron (LIF Model):
+
+  x₁ ──w₁──┐                      x₁ ──w₁──┐
+  x₂ ──w₂──┤──[ Σ ]──[ReLU]──y    x₂ ──w₂──┤──[ ∫ membrane ]──spike! (or silence)
+  x₃ ──w₃──┘                      x₃ ──w₃──┘
+                                              ↑
+  Output: continuous float           Output: 0 or 1, at time t
+  No memory of time                  Explicitly time-dependent
+  Always "on"                        Fires only when threshold crossed
+```
+
+<br/>
+
+### The Leaky Integrate-and-Fire (LIF) Model
+
+The most fundamental spiking neuron model. This is the mathematical heart of how MAYA's neurons will work.
+
+**The Core Differential Equation:**
+
+```
+τ_m · dV(t)/dt  =  -(V(t) - V_rest)  +  R · I(t)
+```
+
+**Where each term means:**
+
+| Symbol | Meaning |
+|--------|---------|
+| `V(t)` | Membrane potential at time t (the neuron's "charge level") |
+| `V_rest` | Resting potential — where voltage returns when neuron is idle (typically -65 mV) |
+| `τ_m` | Membrane time constant — how fast the neuron "forgets" input (leakiness) |
+| `R` | Membrane resistance |
+| `I(t)` | Input current arriving from other neurons |
+
+**The Firing Rule:**
+
+```
+IF  V(t) ≥ V_threshold  →  FIRE a spike  →  reset V(t) = V_reset
+ELSE                    →  continue integrating input
+```
+
+**What this means intuitively:**
+- The neuron is like a **leaky bucket** — charge (input) fills it up, but it constantly drains
+- If enough charge arrives fast enough → the bucket overflows → **spike!**
+- After firing → bucket immediately resets to empty
+- The "leaky" part means old inputs fade — **only recent, sustained input matters**
+
+<br/>
+
+**Visual: Membrane Potential Over Time**
+
+```
+Voltage
+  |
+V_th -------- - - - - - - - - - ●───── spike! ──── ●
+  |          /                 /|                  /|
+  |         /     leaking     / |  reset          / |
+  |        /                 /  ↓                /  ↓
+V_rest ───/──────────────────────────────────────────── time
+         ↑                   ↑                   ↑
+      input                input               input
+      arrives              arrives             arrives
+```
+
+> *This is literally how your neurons work right now — reading these words.*
+
+<br/>
+
+**Diagram reference — LIF Neuron behavior:**
+
+<div align="center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Leaky_Integrate_and_Fire.png/640px-Leaky_Integrate_and_Fire.png" width="600" alt="LIF Neuron - Membrane Potential and Spike Diagram" />
+
+*Leaky Integrate-and-Fire neuron: membrane potential builds up, reaches threshold, fires a spike, resets. Source: Wikimedia Commons (CC)*
+</div>
+
+<br/>
+
+---
+
+### The Hodgkin-Huxley Model — Full Biological Realism
+
+For deeper biological accuracy, MAYA's research also references the **Hodgkin-Huxley model** — a complete description of how ion channels drive action potentials. Nobel Prize, 1963.
+
+```
+C_m · dV/dt  =  I_ext  -  I_Na  -  I_K  -  I_L
+```
+
+**Breaking it down:**
+
+```
+C_m · dV/dt   =   I_ext        -   g_Na·m³·h·(V - E_Na)   -   g_K·n⁴·(V - E_K)   -   g_L·(V - E_L)
+     ↑                ↑                    ↑                          ↑                      ↑
+Membrane           External            Sodium ion               Potassium ion             Leak
+capacitance        input               channel current           channel current           current
+(how much         (stimulus)          (causes depolarization)   (causes repolarization)   (baseline
+voltage            
+changes)                              m, h = gating variables   n = gating variable       conductance)
+```
+
+**The gating variables (m, h, n) follow their own dynamics:**
+
+```
+dm/dt  =  α_m(V)·(1-m)  -  β_m(V)·m
+dh/dt  =  α_h(V)·(1-h)  -  β_h(V)·h
+dn/dt  =  α_n(V)·(1-n)  -  β_n(V)·n
+```
+
+This gives SNNs their rich temporal behavior — **refractory periods**, **bursting**, **adaptation** — all the things that make biological neurons so powerful.
+
+<br/>
+
+---
+
+### STDP — How MAYA Learns Without Backpropagation
+
+**Spike-Timing Dependent Plasticity (STDP)** is the biological learning rule. It is how synapses strengthen or weaken based on the *relative timing* of pre- and post-synaptic spikes.
+
+**The Core Rule:**
+
+```
+If pre fires BEFORE post  →  synapse STRENGTHENS  (Δw > 0)  — "A caused B, reinforce it"
+If pre fires AFTER post   →  synapse WEAKENS       (Δw < 0)  — "A didn't cause B, weaken it"
+```
+
+**Mathematical Form:**
+
+```
+         ⎧  A₊ · exp(-Δt / τ₊)    if  Δt > 0   (pre before post → LTP)
+Δw  =   ⎨
+         ⎩  A₋ · exp( Δt / τ₋)    if  Δt < 0   (post before pre → LTD)
+```
+
+**Where:**
+
+| Symbol | Meaning |
+|--------|---------|
+| `Δt` | `t_post - t_pre` — time difference between post and pre spike |
+| `A₊` | Maximum synaptic potentiation (strengthening) |
+| `A₋` | Maximum synaptic depression (weakening) |
+| `τ₊, τ₋` | Time constants controlling how fast the effect decays |
+
+<br/>
+
+**Visual: STDP Learning Window**
+
+```
+  Δw
+   |
+A₊ |    *
+   |   * *
+   |  *   *                       ← Pre fires before post = STRENGTHEN
+   | *      * * *
+───┼─────────────── Δt (ms)
+   |             * * *
+   |                  *           ← Post fires before pre = WEAKEN
+   |                   *
+A₋ |                    *
+```
+
+**Diagram reference — STDP learning window:**
+
+<div align="center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/STDP_learning_rule.svg/640px-STDP_learning_rule.svg.png" width="500" alt="STDP - Spike Timing Dependent Plasticity learning window" />
+
+*STDP: Synaptic weight change as a function of spike timing difference. Pre-before-post = Long Term Potentiation (LTP). Post-before-pre = Long Term Depression (LTD). Source: Wikimedia Commons (CC)*
+</div>
+
+<br/>
+
+---
+
+### Hebbian Learning — The Oldest Rule
+
+Hebb's rule (1949) — the grandfather of all synaptic learning:
+
+```
+Δw_ij  =  η · x_i · x_j
+```
+
+**Plain English:** *"Neurons that fire together, wire together."*
+
+| Symbol | Meaning |
+|--------|---------|
+| `Δw_ij` | Change in synaptic weight between neuron i and j |
+| `η` | Learning rate |
+| `x_i` | Activity of pre-synaptic neuron i |
+| `x_j` | Activity of post-synaptic neuron j |
+
+STDP is essentially a **temporally precise version** of Hebb's rule — it adds the dimension of *time* to determine whether co-firing is causal or coincidental.
+
+<br/>
+
+---
+
+### SNN vs ANN vs Biological Brain — Comparison
+
+| Property | Traditional ANN | SNN | Biological Brain |
+|----------|----------------|-----|-----------------|
+| **Communication** | Continuous floats | Binary spikes (0/1) | Binary action potentials |
+| **Time** | Stateless | Explicitly time-dependent | Precisely time-coded |
+| **Learning** | Backpropagation (non-biological) | STDP, Hebbian (local) | STDP, Hebbian |
+| **Energy** | Very high (~MW for large models) | Very low (sparse spikes) | ~20 watts |
+| **Memory** | Separate from compute | Co-located (synaptic weights) | Co-located (synapses) |
+| **Forgetting** | Catastrophic | Gradual (bio-plausible) | Gradual consolidation |
+| **Hardware fit** | GPUs | Neuromorphic chips (Loihi) | Neurons & dendrites |
+
+<br/>
+
+---
+
+### Why This Matters for MAYA
+
+| SNN Property | MAYA Application |
+|-------------|-----------------|
+| Temporal coding | MAYA understands *when* things happen, not just *what* |
+| Local learning (STDP) | No global backprop needed → online learning possible |
+| Sparse activation | Massive energy efficiency → runs continuously (Heartbeat) |
+| Refractory period | Natural attention gating — MAYA can't process everything at once |
+| Neuromorphic hardware | MAYA's long-term target: Intel Loihi chips for real-time operation |
+
+<br/>
+
+---
+
 ## 〉 Research Landscape & Our Position
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│  CAMP 1 — "Economic AGI"  (Big Tech & Hype)                     │
-│  OpenAI · Google · Anthropic · Meta                             │
-│  Focus: Brute-force compute, LLMs, chatbots                     │
-│  Path:  Scale transformers until something emergent happens     │
+│  CAMP 1 — "Economic AGI"  (Big Tech & Hype)                                 │
+│  OpenAI · Google · Anthropic · Meta                                         │
+│  Focus: Brute-force compute, LLMs, chatbots                                 │
+│  Path:  Scale transformers until something emergent happens                 │
 └─────────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────────┐
-│  CAMP 2 — "Biological AGI"                                      │
-│  Numenta (Jeff Hawkins)                                         │
-│  Focus: Reverse-engineering the Neocortex                       │
-│  Theory: Cortical columns as the universal algorithm            │
+│  CAMP 2 — "Biological AGI"                                                  │
+│  Numenta (Jeff Hawkins)                                                     │
+│  Focus: Reverse-engineering the Neocortex                                   │
+│  Theory: Cortical columns as the universal algorithm                        │
 └─────────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────────┐
-│  CAMP 3 — "Physics-Based AGI"                                   │
-│  VERSES AI (Karl Friston)                                       │
-│  Focus: Free Energy Principle + Active Inference                │
-│  Path:  Mathematical foundations, not data scaling              │
+│  CAMP 3 — "Physics-Based AGI"                                               │
+│  VERSES AI (Karl Friston)                                                   │
+│  Focus: Free Energy Principle + Active Inference                            │
+│  Path:  Mathematical foundations, not data scaling                          │
 └─────────────────────────────────────────────────────────────────┘
 
 ╔═════════════════════════════════════════════════════════════════╗
-║  ANANTA NEURAL — MAYA                                           ║
-║                                                                  ║
-║  Synthesis: Numenta's architecture + Friston's mathematics      ║
-║  Grounding: Embodied environment with causal understanding      ║
-║  Drive:     Autonomous loop with functional affect system       ║
-║  Goal:      Self-organizing, self-evolving intelligence         ║
+║  ANANTA NEURAL — MAYA                                                       ║
+║                                                                             ║
+║  Synthesis: Numenta's architecture + Friston's mathematics                  ║
+║  Grounding: Embodied environment with causal understanding                  ║
+║  Drive:     Autonomous loop with functional affect system                   ║
+║  Goal:      Self-organizing, self-evolving intelligence                     ║
 ╚═════════════════════════════════════════════════════════════════╝
 ```
 
@@ -345,7 +585,15 @@ AnantaNeural/
 
 *Independent AGI Research · Est. 2025*
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/AnantaNeural?style=social)](https://twitter.com/AnantaNeural)
+<br/>
+
+[![Twitter / X](https://img.shields.io/badge/Twitter%20%2F%20X-@AnantaNeural-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/AnantaNeural)
+[![Instagram](https://img.shields.io/badge/Instagram-@AnantaNeural-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/AnantaNeural)
+[![YouTube](https://img.shields.io/badge/YouTube-@AnantaNeural-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@AnantaNeural)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-AnantaNeural-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/company/AnantaNeural)
+[![GitHub](https://img.shields.io/badge/GitHub-AnantaNeural-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AnantaNeural)
+
+<br/>
 
 *The loop is just beginning.*
 
