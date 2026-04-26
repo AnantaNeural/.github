@@ -504,26 +504,6 @@ MAYA must learn causality, not just correlation. Actions must have consequences.
 
 ---
 
-## 〉 Repository Structure
-
-```
-AnantaNeural/
-│
-├── .github/                   ← You are here (org profile)
-│   └── profile/
-│       └── README.md
-│
-├── maya-core/                 ← Core AGI system (coming soon)
-├── maya-snn/                  ← Spiking Neural Network modules (coming soon)
-├── maya-env/                  ← Grounding environment (coming soon)
-├── maya-memory/               ← Hippocampus / episodic memory (coming soon)
-└── research-notes/            ← Public research logs (coming soon)
-```
-
-<br/>
-
----
-
 ## 〉 About
 
 Ananta Neural was founded with a conviction that the dominant paradigm in AI — larger models, more data, more compute — is solving the wrong problem. The lab operates as an independent research effort, free from product pressure and quarterly targets, focused entirely on getting the foundations right.
