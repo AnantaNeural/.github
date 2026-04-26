@@ -545,26 +545,6 @@ MAYA must learn causality, not just correlation. Actions must have consequences.
 
 ---
 
-## 〉 Repository Structure
-
-```
-AnantaNeural/
-│
-├── .github/                   ← You are here (org profile)
-│   └── profile/
-│       └── README.md
-│
-├── maya-core/                 ← Core AGI system (coming soon)
-├── maya-snn/                  ← Spiking Neural Network modules (coming soon)
-├── maya-env/                  ← Grounding environment (coming soon)
-├── maya-memory/               ← Hippocampus / episodic memory (coming soon)
-└── research-notes/            ← Public research logs (coming soon)
-```
-
-<br/>
-
----
-
 ## 〉 Philosophy
 
 > *"Intelligence is not the base. It is a byproduct. The brain evolved for movement and survival — not for solving equations. A human child is not born with high-level intelligence. They are born with basic reflexes, sensory inputs, and a reward/pain system. Intelligence emerges from interaction."*
