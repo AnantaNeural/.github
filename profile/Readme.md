@@ -33,30 +33,6 @@
 
 <br/>
 
-<details>
-<summary><b>📋 Table of Contents</b> — click to expand</summary>
-<br/>
-
-| # | Section |
-|---|---------|
-| 01 | [What is Ananta Neural?](#-what-is-ananta-neural) |
-| 02 | [The MAYA Project — Core Design Tenets](#-the-maya-project) |
-| 03 | [Architecture Overview — Triune Brain](#-architecture-overview) |
-| 04 | [The Mathematics of MAYA — Free Energy Principle](#-the-mathematics-of-maya) |
-| 05 | [Spiking Neural Networks — Deep Dive](#-spiking-neural-networks-snns--the-core-of-mayas-brain) |
-| 06 | [Research Landscape — Where We Stand](#-research-landscape--our-position) |
-| 07 | [Core Problems We Are Solving](#-core-problems-we-are-solving) |
-| 08 | [Current Research Status & Roadmap](#-current-research-status) |
-| 09 | [Key Theoretical References](#-key-theoretical-references) |
-| 10 | [Repository Structure](#-repository-structure) |
-| 11 | [Philosophy](#-philosophy) |
-
-</details>
-
-<br/>
-
----
-
 ## 〉 What is Ananta Neural?
 
 Ananta Neural is an independent AGI research lab with a single mission — to build **MAYA**, a biologically-grounded autonomous intelligence system, from absolute first principles.
@@ -233,9 +209,9 @@ In your brain, neurons don't output a continuous number. They either **fire** or
 ```
 Traditional ANN Neuron:          Spiking Neuron (LIF Model):
 
-  x₁ ──w₁──┐                      x₁ ──w₁──┐
+  x₁ ──w₁──┐                       x₁ ──w₁──┐
   x₂ ──w₂──┤──[ Σ ]──[ReLU]──y    x₂ ──w₂──┤──[ ∫ membrane ]──spike! (or silence)
-  x₃ ──w₃──┘                      x₃ ──w₃──┘
+  x₃ ──w₃──┘                       x₃ ──w₃──┘
                                               ↑
   Output: continuous float           Output: 0 or 1, at time t
   No memory of time                  Explicitly time-dependent
