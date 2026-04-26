@@ -116,33 +116,33 @@ MAYA is built on the **Triune Brain Model** — three deeply interconnected modu
 
 ```
 ╔══════════════════════════════════════════════════════════════════╗
-║                      MAYA  ARCHITECTURE                         ║
+║                      MAYA  ARCHITECTURE                                      ║
 ╠══════════════════════════════════════════════════════════════════╣
-║                                                                  ║
-║   ┌─────────────────────────────────────────────────────────┐   ║
-║   │  THE NEOCORTEX                                          │   ║
-║   │      Complex pattern recognition                        │   ║
-║   │      Abstract reasoning & high-level planning           │   ║
-║   │      World-Model building (3D Reference Frames)         │   ║
-║   │      Cortical Columns → consensus-based truth           │   ║
-║   └─────────────────────────────────────────────────────────┘   ║
-║                            ↕                                     ║
-║   ┌─────────────────────────────────────────────────────────┐   ║
-║   │  THE HIPPOCAMPUS                                        │   ║
-║   │      Episodic memory store                              │   ║
-║   │      Fast one-shot learning                             │   ║
-║   │      Past experience replay                             │   ║
-║   │      Working memory <-> Long-term memory bridge         │   ║
-║   └─────────────────────────────────────────────────────────┘   ║
-║                            ↕                                     ║
-║   ┌─────────────────────────────────────────────────────────┐   ║
-║   │  BASAL GANGLIA + NEUROMODULATORS                        │   ║
-║   │      Action selection engine                            │   ║
-║   │      Dopamine / Serotonin simulation                    │   ║
-║   │      Reinforcement & reward processing                  │   ║
-║   │      Attention focus: "Where should I look next?"       │   ║
-║   └─────────────────────────────────────────────────────────┘   ║
-║                                                                  ║
+║                                                                              ║
+║   ┌─────────────────────────────────────────────────────────┐     ║
+║   │  THE NEOCORTEX                                                     │     ║
+║   │      Complex pattern recognition                                   │     ║
+║   │      Abstract reasoning & high-level planning                      │     ║
+║   │      World-Model building (3D Reference Frames)                    │     ║
+║   │      Cortical Columns → consensus-based truth                     │     ║
+║   └─────────────────────────────────────────────────────────┘     ║
+║                            ↕                                                 ║
+║   ┌─────────────────────────────────────────────────────────┐     ║
+║   │  THE HIPPOCAMPUS                                                   │     ║
+║   │      Episodic memory store                                         │     ║
+║   │      Fast one-shot learning                                        │     ║
+║   │      Past experience replay                                        │     ║
+║   │      Working memory <-> Long-term memory bridge                    │     ║
+║   └─────────────────────────────────────────────────────────┘     ║
+║                            ↕                                                 ║
+║   ┌─────────────────────────────────────────────────────────┐     ║
+║   │  BASAL GANGLIA + NEUROMODULATORS                                   │     ║
+║   │      Action selection engine                                       │     ║
+║   │      Dopamine / Serotonin simulation                               │     ║
+║   │      Reinforcement & reward processing                             │     ║
+║   │      Attention focus: "Where should I look next?"                  │     ║
+║   └─────────────────────────────────────────────────────────┘     ║
+║                                                                              ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
 
@@ -317,7 +317,7 @@ If pre fires AFTER post   →  synapse WEAKENS       (Δw < 0)  — "A didn't ca
 
 ```
          ⎧  A₊ · exp(-Δt / τ₊)    if  Δt > 0   (pre before post → LTP)
-Δw  =   ⎨
+Δw  =    ⎨
          ⎩  A₋ · exp( Δt / τ₋)    if  Δt < 0   (post before pre → LTD)
 ```
 
@@ -399,33 +399,33 @@ STDP is essentially a **temporally precise version** of Hebb's rule — it adds 
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│  CAMP 1 — "Economic AGI"  (Big Tech & Hype)                     │
-│  OpenAI · Google · Anthropic · Meta                             │
-│  Focus: Brute-force compute, LLMs, chatbots                     │
-│  Path:  Scale transformers until something emergent happens     │
+│  CAMP 1 — "Economic AGI"  (Big Tech & Hype)                                 │
+│  OpenAI · Google · Anthropic · Meta                                         │
+│  Focus: Brute-force compute, LLMs, chatbots                                 │
+│  Path:  Scale transformers until something emergent happens                 │
 └─────────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────────┐
-│  CAMP 2 — "Biological AGI"                                      │
-│  Numenta (Jeff Hawkins)                                         │
-│  Focus: Reverse-engineering the Neocortex                       │
-│  Theory: Cortical columns as the universal algorithm            │
+│  CAMP 2 — "Biological AGI"                                                  │
+│  Numenta (Jeff Hawkins)                                                     │
+│  Focus: Reverse-engineering the Neocortex                                   │
+│  Theory: Cortical columns as the universal algorithm                        │
 └─────────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────────┐
-│  CAMP 3 — "Physics-Based AGI"                                   │
-│  VERSES AI (Karl Friston)                                       │
-│  Focus: Free Energy Principle + Active Inference                │
-│  Path:  Mathematical foundations, not data scaling              │
+│  CAMP 3 — "Physics-Based AGI"                                               │
+│  VERSES AI (Karl Friston)                                                   │
+│  Focus: Free Energy Principle + Active Inference                            │
+│  Path:  Mathematical foundations, not data scaling                          │
 └─────────────────────────────────────────────────────────────────┘
 
 ╔═════════════════════════════════════════════════════════════════╗
-║  ANANTA NEURAL — MAYA                                           ║
-║                                                                  ║
-║  Synthesis: Numenta's architecture + Friston's mathematics      ║
-║  Grounding: Embodied environment with causal understanding      ║
-║  Drive:     Autonomous loop with functional affect system       ║
-║  Goal:      Self-organizing, self-evolving intelligence         ║
+║  ANANTA NEURAL — MAYA                                                       ║
+║                                                                             ║
+║  Synthesis: Numenta's architecture + Friston's mathematics                  ║
+║  Grounding: Embodied environment with causal understanding                  ║
+║  Drive:     Autonomous loop with functional affect system                   ║
+║  Goal:      Self-organizing, self-evolving intelligence                     ║
 ╚═════════════════════════════════════════════════════════════════╝
 ```
 
