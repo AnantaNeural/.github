@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420">
+  <!-- Background -->
+  <rect width="800" height="420" fill="#0d1117" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="38" font-family="monospace" font-size="15" fill="#e6edf3" text-anchor="middle" font-weight="bold">Leaky Integrate-and-Fire (LIF) Neuron — Membrane Potential V(t)</text>
+
+  <!-- Axes -->
+  <!-- Y axis -->
+  <line x1="80" y1="50" x2="80" y2="340" stroke="#30363d" stroke-width="1.5"/>
+  <!-- X axis -->
+  <line x1="80" y1="290" x2="740" y2="290" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- Axis labels -->
+  <text x="30" y="200" font-family="monospace" font-size="12" fill="#8b949e" text-anchor="middle" transform="rotate(-90,30,200)">Membrane Potential V(t)</text>
+  <text x="410" y="380" font-family="monospace" font-size="12" fill="#8b949e" text-anchor="middle">Time (ms)</text>
+
+  <!-- Threshold line -->
+  <line x1="80" y1="110" x2="740" y2="110" stroke="#f0883e" stroke-width="1" stroke-dasharray="6,4"/>
+  <text x="745" y="114" font-family="monospace" font-size="11" fill="#f0883e">V_th</text>
+
+  <!-- Resting potential line -->
+  <line x1="80" y1="290" x2="740" y2="290" stroke="#388bfd" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="745" y="294" font-family="monospace" font-size="11" fill="#388bfd">V_rest</text>
+
+  <!-- Y axis tick labels -->
+  <text x="72" y="114" font-family="monospace" font-size="10" fill="#8b949e" text-anchor="end">-55mV</text>
+  <text x="72" y="294" font-family="monospace" font-size="10" fill="#8b949e" text-anchor="end">-70mV</text>
+
+  <!-- Membrane potential curve — segment 1: resting then charging up -->
+  <polyline points="
+    80,290
+    120,290
+    200,175
+    240,200
+    280,220
+    310,240
+    330,255
+    350,265
+    370,275
+    390,283
+    400,290
+  " fill="none" stroke="#3fb950" stroke-width="2.2"/>
+
+  <!-- Segment 2: second input, charges faster to threshold -->
+  <polyline points="
+    400,290
+    440,260
+    480,220
+    510,175
+    530,140
+    545,110
+  " fill="none" stroke="#3fb950" stroke-width="2.2"/>
+
+  <!-- Spike vertical line 1 -->
+  <line x1="545" y1="110" x2="545" y2="55" stroke="#3fb950" stroke-width="2.2"/>
+  <line x1="545" y1="55" x2="555" y2="55" stroke="#3fb950" stroke-width="2.2"/>
+  <line x1="555" y1="55" x2="555" y2="290" stroke="#3fb950" stroke-width="2.2"/>
+
+  <!-- Segment 3: reset, then charging again -->
+  <polyline points="
+    555,290
+    590,268
+    620,250
+    650,232
+    680,220
+    700,214
+    720,210
+    740,207
+  " fill="none" stroke="#3fb950" stroke-width="2.2"/>
+
+  <!-- Input arrows on x axis -->
+  <!-- Input 1 -->
+  <line x1="120" y1="305" x2="120" y2="295" stroke="#bc8cff" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="120" y="318" font-family="monospace" font-size="10" fill="#bc8cff" text-anchor="middle">input₁</text>
+
+  <!-- Input 2 -->
+  <line x1="400" y1="305" x2="400" y2="295" stroke="#bc8cff" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="400" y="318" font-family="monospace" font-size="10" fill="#bc8cff" text-anchor="middle">input₂</text>
+
+  <!-- Input 3 -->
+  <line x1="555" y1="305" x2="555" y2="295" stroke="#bc8cff" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="555" y="318" font-family="monospace" font-size="10" fill="#bc8cff" text-anchor="middle">reset</text>
+
+  <!-- Spike label -->
+  <text x="545" y="47" font-family="monospace" font-size="11" fill="#f0883e" text-anchor="middle">SPIKE!</text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 z" fill="#bc8cff"/>
+    </marker>
+  </defs>
+
+  <!-- Annotation: leaking -->
+  <text x="250" y="165" font-family="monospace" font-size="10" fill="#8b949e">leaking...</text>
+  <line x1="200" y1="175" x2="390" y2="283" stroke="#30363d" stroke-width="0.8" stroke-dasharray="3,3"/>
+
+  <!-- Annotation: threshold crossed -->
+  <text x="490" y="100" font-family="monospace" font-size="10" fill="#f0883e">threshold crossed</text>
+
+  <!-- Annotation: refractory -->
+  <text x="620" y="240" font-family="monospace" font-size="10" fill="#8b949e">refractory /</text>
+  <text x="620" y="253" font-family="monospace" font-size="10" fill="#8b949e">charging again</text>
+
+  <!-- Bottom equation -->
+  <rect x="160" y="340" width="480" height="62" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="400" y="360" font-family="monospace" font-size="12" fill="#8b949e" text-anchor="middle">Core Equation:</text>
+  <text x="400" y="380" font-family="monospace" font-size="13" fill="#e6edf3" text-anchor="middle">τ_m · dV(t)/dt = -(V(t) - V_rest) + R · I(t)</text>
+  <text x="400" y="396" font-family="monospace" font-size="10" fill="#6e7681" text-anchor="middle">Fire when V(t) ≥ V_threshold, then reset to V_rest</text>
+</svg>
