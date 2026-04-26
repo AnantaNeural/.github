@@ -10,8 +10,8 @@
 ██╔══██╗████╗  ██║██╔══██╗████╗  ██║╚══██╔══╝██╔══██╗
 ███████║██╔██╗ ██║███████║██╔██╗ ██║   ██║   ███████║
 ██╔══██║██║╚██╗██║██╔══██║██║╚██╗██║   ██║   ██╔══██║
-██║  ██║██║ ╚████║██║  ██║██║ ╚████║   ██║    ██║  ██║
-╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝    ╚═╝  ╚═╝
+██║  ██║██║ ╚████║██║  ██║██║ ╚████║   ██║   ██║  ██║
+╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝
                    N E U R A L
 ```
 
@@ -37,6 +37,30 @@
 ---
 
 <br/>
+
+<details>
+<summary><b>📋 Table of Contents</b> — click to expand</summary>
+<br/>
+
+| # | Section |
+|---|---------|
+| 01 | [What is Ananta Neural?](#-what-is-ananta-neural) |
+| 02 | [The MAYA Project — Core Design Tenets](#-the-maya-project) |
+| 03 | [Architecture Overview — Triune Brain](#-architecture-overview) |
+| 04 | [The Mathematics of MAYA — Free Energy Principle](#-the-mathematics-of-maya) |
+| 05 | [Spiking Neural Networks — Deep Dive](#-spiking-neural-networks-snns--the-core-of-mayas-brain) |
+| 06 | [Research Landscape — Where We Stand](#-research-landscape--our-position) |
+| 07 | [Core Problems We Are Solving](#-core-problems-we-are-solving) |
+| 08 | [Current Research Status & Roadmap](#-current-research-status) |
+| 09 | [Key Theoretical References](#-key-theoretical-references) |
+| 10 | [Repository Structure](#-repository-structure) |
+| 11 | [Philosophy](#-philosophy) |
+
+</details>
+
+<br/>
+
+---
 
 ## 〉 What is Ananta Neural?
 
@@ -121,33 +145,33 @@ MAYA is built on the **Triune Brain Model** — three deeply interconnected modu
 
 ```
 ╔══════════════════════════════════════════════════════════════════╗
-║                      MAYA  ARCHITECTURE                                      ║
+║                      MAYA  ARCHITECTURE                         ║
 ╠══════════════════════════════════════════════════════════════════╣
-║                                                                              ║
-║   ┌─────────────────────────────────────────────────────────┐     ║
-║   │  THE NEOCORTEX                                                     │     ║
-║   │      Complex pattern recognition                                   │     ║
-║   │      Abstract reasoning & high-level planning                      │     ║
-║   │      World-Model building (3D Reference Frames)                    │     ║
-║   │      Cortical Columns → consensus-based truth                     │     ║
-║   └─────────────────────────────────────────────────────────┘     ║
-║                            ↕                                                 ║
-║   ┌─────────────────────────────────────────────────────────┐     ║
-║   │  THE HIPPOCAMPUS                                                   │     ║
-║   │      Episodic memory store                                         │     ║
-║   │      Fast one-shot learning                                        │     ║
-║   │      Past experience replay                                        │     ║
-║   │      Working memory <-> Long-term memory bridge                    │     ║
-║   └─────────────────────────────────────────────────────────┘     ║
-║                            ↕                                                 ║
-║   ┌─────────────────────────────────────────────────────────┐     ║
-║   │  BASAL GANGLIA + NEUROMODULATORS                                   │     ║
-║   │      Action selection engine                                       │     ║
-║   │      Dopamine / Serotonin simulation                               │     ║
-║   │      Reinforcement & reward processing                             │     ║
-║   │      Attention focus: "Where should I look next?"                  │     ║
-║   └─────────────────────────────────────────────────────────┘     ║
-║                                                                              ║
+║                                                                  ║
+║   ┌─────────────────────────────────────────────────────────┐   ║
+║   │  THE NEOCORTEX                                          │   ║
+║   │      Complex pattern recognition                        │   ║
+║   │      Abstract reasoning & high-level planning           │   ║
+║   │      World-Model building (3D Reference Frames)         │   ║
+║   │      Cortical Columns → consensus-based truth           │   ║
+║   └─────────────────────────────────────────────────────────┘   ║
+║                            ↕                                     ║
+║   ┌─────────────────────────────────────────────────────────┐   ║
+║   │  THE HIPPOCAMPUS                                        │   ║
+║   │      Episodic memory store                              │   ║
+║   │      Fast one-shot learning                             │   ║
+║   │      Past experience replay                             │   ║
+║   │      Working memory <-> Long-term memory bridge         │   ║
+║   └─────────────────────────────────────────────────────────┘   ║
+║                            ↕                                     ║
+║   ┌─────────────────────────────────────────────────────────┐   ║
+║   │  BASAL GANGLIA + NEUROMODULATORS                        │   ║
+║   │      Action selection engine                            │   ║
+║   │      Dopamine / Serotonin simulation                    │   ║
+║   │      Reinforcement & reward processing                  │   ║
+║   │      Attention focus: "Where should I look next?"       │   ║
+║   └─────────────────────────────────────────────────────────┘   ║
+║                                                                  ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
 
@@ -279,12 +303,10 @@ V_rest ───/─────────────────────
 
 <br/>
 
-**Diagram reference — LIF Neuron behavior:**
+**Diagram — LIF Neuron Membrane Potential:**
 
 <div align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Leaky_Integrate_and_Fire.png/640px-Leaky_Integrate_and_Fire.png" width="600" alt="LIF Neuron - Membrane Potential and Spike Diagram" />
-
-*Leaky Integrate-and-Fire neuron: membrane potential builds up, reaches threshold, fires a spike, resets. Source: Wikimedia Commons (CC)*
+<img src="https://raw.githubusercontent.com/AnantaNeural/.github/main/profile/assets/lif_neuron.svg" width="700" alt="LIF Neuron - Membrane Potential and Spike Diagram" />
 </div>
 
 <br/>
@@ -371,12 +393,10 @@ A₊ |    *
 A₋ |                    *
 ```
 
-**Diagram reference — STDP learning window:**
+**Diagram — STDP Learning Window:**
 
 <div align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/STDP_learning_rule.svg/640px-STDP_learning_rule.svg.png" width="500" alt="STDP - Spike Timing Dependent Plasticity learning window" />
-
-*STDP: Synaptic weight change as a function of spike timing difference. Pre-before-post = Long Term Potentiation (LTP). Post-before-pre = Long Term Depression (LTD). Source: Wikimedia Commons (CC)*
+<img src="https://raw.githubusercontent.com/AnantaNeural/.github/main/profile/assets/stdp_learning.svg" width="700" alt="STDP - Spike Timing Dependent Plasticity learning window" />
 </div>
 
 <br/>
@@ -440,33 +460,33 @@ STDP is essentially a **temporally precise version** of Hebb's rule — it adds 
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│  CAMP 1 — "Economic AGI"  (Big Tech & Hype)                                 │
-│  OpenAI · Google · Anthropic · Meta                                         │
-│  Focus: Brute-force compute, LLMs, chatbots                                 │
-│  Path:  Scale transformers until something emergent happens                 │
+│  CAMP 1 — "Economic AGI"  (Big Tech & Hype)                     │
+│  OpenAI · Google · Anthropic · Meta                             │
+│  Focus: Brute-force compute, LLMs, chatbots                     │
+│  Path:  Scale transformers until something emergent happens     │
 └─────────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────────┐
-│  CAMP 2 — "Biological AGI"                                                  │
-│  Numenta (Jeff Hawkins)                                                     │
-│  Focus: Reverse-engineering the Neocortex                                   │
-│  Theory: Cortical columns as the universal algorithm                        │
+│  CAMP 2 — "Biological AGI"                                      │
+│  Numenta (Jeff Hawkins)                                         │
+│  Focus: Reverse-engineering the Neocortex                       │
+│  Theory: Cortical columns as the universal algorithm            │
 └─────────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────────┐
-│  CAMP 3 — "Physics-Based AGI"                                               │
-│  VERSES AI (Karl Friston)                                                   │
-│  Focus: Free Energy Principle + Active Inference                            │
-│  Path:  Mathematical foundations, not data scaling                          │
+│  CAMP 3 — "Physics-Based AGI"                                   │
+│  VERSES AI (Karl Friston)                                       │
+│  Focus: Free Energy Principle + Active Inference                │
+│  Path:  Mathematical foundations, not data scaling              │
 └─────────────────────────────────────────────────────────────────┘
 
 ╔═════════════════════════════════════════════════════════════════╗
-║  ANANTA NEURAL — MAYA                                                       ║
-║                                                                             ║
-║  Synthesis: Numenta's architecture + Friston's mathematics                  ║
-║  Grounding: Embodied environment with causal understanding                  ║
-║  Drive:     Autonomous loop with functional affect system                   ║
-║  Goal:      Self-organizing, self-evolving intelligence                     ║
+║  ANANTA NEURAL — MAYA                                           ║
+║                                                                  ║
+║  Synthesis: Numenta's architecture + Friston's mathematics      ║
+║  Grounding: Embodied environment with causal understanding      ║
+║  Drive:     Autonomous loop with functional affect system       ║
+║  Goal:      Self-organizing, self-evolving intelligence         ║
 ╚═════════════════════════════════════════════════════════════════╝
 ```
 
@@ -540,6 +560,38 @@ MAYA must learn causality, not just correlation. Actions must have consequences.
 | **Jeff Hawkins** | A Thousand Brains, Cortical Columns | MAYA's Neocortex architecture blueprint |
 | **Yann LeCun** | JEPA — Joint Embedding Predictive Architecture | World-model structure reference |
 | **Kahneman & Sapolsky** | System 1/2 thinking, limbic behavior | MAYA's philosophical and affect layer |
+
+<br/>
+
+---
+
+## 〉 Repository Structure
+
+```
+AnantaNeural/
+│
+├── .github/                   ← You are here (org profile)
+│   └── profile/
+│       └── README.md
+│
+├── maya-core/                 ← Core AGI system (coming soon)
+├── maya-snn/                  ← Spiking Neural Network modules (coming soon)
+├── maya-env/                  ← Grounding environment (coming soon)
+├── maya-memory/               ← Hippocampus / episodic memory (coming soon)
+└── research-notes/            ← Public research logs (coming soon)
+```
+
+<br/>
+
+---
+
+## 〉 About
+
+Ananta Neural was founded with a conviction that the dominant paradigm in AI — larger models, more data, more compute — is solving the wrong problem. The lab operates as an independent research effort, free from product pressure and quarterly targets, focused entirely on getting the foundations right.
+
+The name **"Ananta"** (Sanskrit: अनंत) means **infinite** or **endless** — reflecting the unbounded nature of the intelligence we are trying to understand and build.
+
+Research is conducted in public. Notes, failures, and breakthroughs are documented and shared.
 
 <br/>
 
