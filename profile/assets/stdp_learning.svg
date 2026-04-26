@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440">
+  <!-- Background -->
+  <rect width="800" height="440" fill="#0d1117" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="36" font-family="monospace" font-size="15" fill="#e6edf3" text-anchor="middle" font-weight="bold">Spike-Timing Dependent Plasticity (STDP) — Learning Window</text>
+
+  <!-- Grid lines -->
+  <line x1="100" y1="80" x2="700" y2="80" stroke="#161b22" stroke-width="1"/>
+  <line x1="100" y1="140" x2="700" y2="140" stroke="#161b22" stroke-width="1"/>
+  <line x1="100" y1="200" x2="700" y2="200" stroke="#161b22" stroke-width="1"/>
+  <line x1="100" y1="260" x2="700" y2="260" stroke="#161b22" stroke-width="1"/>
+  <line x1="100" y1="320" x2="700" y2="320" stroke="#161b22" stroke-width="1"/>
+  <line x1="200" y1="60" x2="200" y2="370" stroke="#161b22" stroke-width="1"/>
+  <line x1="300" y1="60" x2="300" y2="370" stroke="#161b22" stroke-width="1"/>
+  <line x1="500" y1="60" x2="500" y2="370" stroke="#161b22" stroke-width="1"/>
+  <line x1="600" y1="60" x2="600" y2="370" stroke="#161b22" stroke-width="1"/>
+
+  <!-- Axes -->
+  <line x1="100" y1="60" x2="100" y2="370" stroke="#30363d" stroke-width="1.5"/>
+  <line x1="100" y1="220" x2="700" y2="220" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- Zero center line label -->
+  <text x="400" y="216" font-family="monospace" font-size="11" fill="#30363d" text-anchor="middle">━━━━━━━━━ Δt = 0 ━━━━━━━━━</text>
+
+  <!-- Axis labels -->
+  <text x="35" y="224" font-family="monospace" font-size="12" fill="#8b949e" text-anchor="middle" transform="rotate(-90,35,224)">Δw (synaptic weight change)</text>
+  <text x="400" y="410" font-family="monospace" font-size="12" fill="#8b949e" text-anchor="middle">Δt = t_post − t_pre  (milliseconds)</text>
+
+  <!-- Y axis tick labels -->
+  <text x="92" y="84" font-family="monospace" font-size="10" fill="#3fb950" text-anchor="end">+A₊</text>
+  <text x="92" y="224" font-family="monospace" font-size="10" fill="#8b949e" text-anchor="end">0</text>
+  <text x="92" y="364" font-family="monospace" font-size="10" fill="#f85149" text-anchor="end">−A₋</text>
+
+  <!-- X axis tick labels -->
+  <text x="200" y="238" font-family="monospace" font-size="10" fill="#8b949e" text-anchor="middle">-40ms</text>
+  <text x="300" y="238" font-family="monospace" font-size="10" fill="#8b949e" text-anchor="middle">-20ms</text>
+  <text x="400" y="238" font-family="monospace" font-size="10" fill="#8b949e" text-anchor="middle">0</text>
+  <text x="500" y="238" font-family="monospace" font-size="10" fill="#8b949e" text-anchor="middle">+20ms</text>
+  <text x="600" y="238" font-family="monospace" font-size="10" fill="#8b949e" text-anchor="middle">+40ms</text>
+
+  <!-- LTP curve: Δt < 0 side (pre before post = positive Δw) -->
+  <!-- Rises sharply near 0, decays exponentially to left -->
+  <path d="M 140,220 C 160,219 190,218 220,215 C 250,210 280,200 310,185 C 330,174 350,158 365,140 C 375,128 385,110 395,88 L 400,80"
+        fill="none" stroke="#3fb950" stroke-width="2.5"/>
+
+  <!-- LTD curve: Δt > 0 side (post before pre = negative Δw) -->
+  <!-- Drops sharply near 0, decays exponentially to right -->
+  <path d="M 400,220 L 405,270 C 410,300 420,320 440,335 C 460,348 490,356 520,360 C 560,364 600,363 660,362"
+        fill="none" stroke="#f85149" stroke-width="2.5"/>
+
+  <!-- Shaded LTP area -->
+  <path d="M 140,220 C 160,219 190,218 220,215 C 250,210 280,200 310,185 C 330,174 350,158 365,140 C 375,128 385,110 395,88 L 400,80 L 400,220 Z"
+        fill="#3fb950" fill-opacity="0.08"/>
+
+  <!-- Shaded LTD area -->
+  <path d="M 400,220 L 405,270 C 410,300 420,320 440,335 C 460,348 490,356 520,360 C 560,364 600,363 660,362 L 660,220 Z"
+        fill="#f85149" fill-opacity="0.08"/>
+
+  <!-- Vertical center line -->
+  <line x1="400" y1="60" x2="400" y2="370" stroke="#484f58" stroke-width="1" stroke-dasharray="5,3"/>
+
+  <!-- LTP annotation box -->
+  <rect x="110" y="65" width="230" height="74" rx="5" fill="#161b22" stroke="#3fb950" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="225" y="84" font-family="monospace" font-size="11" fill="#3fb950" text-anchor="middle" font-weight="bold">LTP — Strengthening</text>
+  <text x="225" y="100" font-family="monospace" font-size="10" fill="#8b949e" text-anchor="middle">Pre fires BEFORE post</text>
+  <text x="225" y="115" font-family="monospace" font-size="10" fill="#e6edf3" text-anchor="middle">Δw = A₊ · exp(−Δt / τ₊)</text>
+  <text x="225" y="130" font-family="monospace" font-size="10" fill="#6e7681" text-anchor="middle">"A caused B → reinforce"</text>
+
+  <!-- LTD annotation box -->
+  <rect x="460" y="65" width="230" height="74" rx="5" fill="#161b22" stroke="#f85149" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="575" y="84" font-family="monospace" font-size="11" fill="#f85149" text-anchor="middle" font-weight="bold">LTD — Weakening</text>
+  <text x="575" y="100" font-family="monospace" font-size="10" fill="#8b949e" text-anchor="middle">Post fires BEFORE pre</text>
+  <text x="575" y="115" font-family="monospace" font-size="10" fill="#e6edf3" text-anchor="middle">Δw = −A₋ · exp(Δt / τ₋)</text>
+  <text x="575" y="130" font-family="monospace" font-size="10" fill="#6e7681" text-anchor="middle">"A didn't cause B → weaken"</text>
+
+  <!-- Bottom equation box -->
+  <rect x="100" y="378" width="600" height="52" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="400" y="396" font-family="monospace" font-size="11" fill="#8b949e" text-anchor="middle">Hebbian Core:  Δw_ij = η · x_i · x_j     |     STDP adds timing:  Δt = t_post − t_pre</text>
+  <text x="400" y="418" font-family="monospace" font-size="12" fill="#e6edf3" text-anchor="middle">"Neurons that fire together, wire together" — Hebb, 1949</text>
+</svg>
