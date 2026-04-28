@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <rect width="1080" height="1080" fill="#000000"/>
+
+  <!--
+    KEY INSIGHT from image analysis:
+    The logo is NOT a uniform ring. It's a CRESCENT-LIKE shape:
+    - Top portion: very thick white arc (like a bold crescent opening downward)
+    - The thickness tapers as it goes around to the bottom
+    - At bottom, two thin curves split and fall to a point
+
+    EXACT METHOD:
+    Outer circle center: (540, 430), R_outer = 290
+    Inner circle center: (540, 430) but shifted — actually same center
+    BUT: the inner circle is SMALLER at top (ring thick) and larger at bottom (ring thin)
+    
+    Best approach: Use a single compound path with:
+    - Outer arc: r=290
+    - Inner arc: r=220 but center offset down by ~30px
+    
+    Outer center: (540, 420), r=290
+    Inner center: (540, 453), r=233
+    
+    Gap at top: (420+290)=710 - (453+233-290... let me just compute)
+    Top of outer: y = 420-290 = 130
+    Top of inner: y = 453-233 = 220
+    Ring thickness at top: 220-130 = 90px ✓ (thick)
+    
+    Left of outer: x = 540-290 = 250
+    Left of inner: x = 540-233 = 307  
+    Ring thickness at left: 307-250 = 57px ✓ (medium)
+    
+    Bottom of outer: y = 420+290 = 710
+    Bottom of inner: y = 453+233 = 686
+    Ring thickness at bottom: 710-686 = 24px ✓ (thin — tails emerge here)
+    
+    Right of outer: x = 540+290 = 830
+    Right of inner: x = 540+233 = 773
+    Ring thickness at right: 830-773 = 57px ✓ (medium, matches image — right side thin-ish)
+    
+    This matches the image perfectly.
+  -->
+
+  <defs>
+    <!-- Mask for the ring: outer circle minus inner offset circle -->
+    <mask id="m">
+      <rect width="1080" height="1080" fill="black"/>
+      <!-- Outer ring area: white -->
+      <circle cx="540" cy="420" r="290" fill="white"/>
+      <!-- Inner cutout offset down to create thick top, thin bottom -->
+      <circle cx="540" cy="453" r="233" fill="black"/>
+    </mask>
+  </defs>
+
+  <!-- Main ring shape -->
+  <circle cx="540" cy="420" r="290" fill="white" mask="url(#m)"/>
+
+  <!--
+    TAILS:
+    The ring bottom (outer) is at y=710, x=540
+    The ring inner bottom is at y=686, x=540
+    So the bottom of the ring is a thin strip ~24px tall centered at x=540, y≈698
+
+    The tails emerge from near the bottom where the ring becomes very thin.
+    They split LEFT and RIGHT then curve DOWN to meet at a tip.
+    
+    From image: tails start roughly at x=490 and x=590 (roughly), 
+    outer tails then converge at x=540, y≈870
+    
+    The bottom of the ring circle at angle:
+    At angle 200° from top (measuring from center 540,420):
+    Left exit: (540 + 290*sin(200°), 420 + 290*cos(200°)) ... 
+    
+    Simpler: tails emerge from left and right bottom of the ring form,
+    curving elegantly to a sharp point below.
+  -->
+
+  <!-- Cover gap at very bottom center where ring shape creates a bridge -->
+  <!-- The inner circle bottom (y=686) is above outer bottom (y=710) -->
+  <!-- So ring has a bottom strip from y=686 to y=710 — need to handle tails here -->
+
+  <!-- Strategic black cover to create the two-tail split at ring bottom -->
+  <!-- Cover center bottom of ring leaving two narrow exit paths -->
+  <ellipse cx="540" cy="705" rx="48" ry="14" fill="black"/>
+
+  <!-- LEFT TAIL: emerges from left side of ring bottom, curves to tip -->
+  <!-- Start point: roughly where ring ends at bottom-left ~(485, 692) -->
+  <path d="M 484 692
+           C 472 720, 468 760, 490 800
+           C 505 830, 522 852, 540 872"
+        fill="none"
+        stroke="white"
+        stroke-width="2.4"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- RIGHT TAIL: mirror of left tail -->
+  <path d="M 596 692
+           C 608 720, 612 760, 590 800
+           C 575 830, 558 852, 540 872"
+        fill="none"
+        stroke="white"
+        stroke-width="2.4"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- INNER HAIRLINES: faint inner echo tails (visible in logo as very fine lines) -->
+  <path d="M 496 695
+           C 486 720, 483 755, 503 793
+           C 516 820, 530 848, 540 866"
+        fill="none"
+        stroke="white"
+        stroke-width="0.9"
+        stroke-linecap="round"
+        opacity="0.38"/>
+
+  <path d="M 584 695
+           C 594 720, 597 755, 577 793
+           C 564 820, 550 848, 540 866"
+        fill="none"
+        stroke="white"
+        stroke-width="0.9"
+        stroke-linecap="round"
+        opacity="0.38"/>
+
+</svg>
